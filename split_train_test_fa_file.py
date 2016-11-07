@@ -9,6 +9,7 @@
 ################################################################################
 
 import random
+from collections import OrderedDict
 
 def split_train_test_fa(fasta_file):
 	
@@ -18,7 +19,8 @@ def split_train_test_fa(fasta_file):
 		if line[0] == '>':
 			count += 1
 			
-
+	print count
+	
 	trainSplit = int(count*0.8)
 	testSplit = int(trainSplit + count*0.1)
 
@@ -64,5 +66,6 @@ def split_train_test_fa(fasta_file):
 				fvalid.write('\n')
 				fvalid.write(dict[header])
 				fvalid.write('\n')
+		
 		
 split_train_test_fa("Data.fa")
