@@ -1,5 +1,5 @@
 ################################################################################
-# split_NM_NR  by Stella Gao
+# split_train_test_fa  by Stella Gao
 #
 # Input
 #  fasta_file:  Input FASTA file.
