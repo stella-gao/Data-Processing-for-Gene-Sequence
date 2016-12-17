@@ -9,3 +9,16 @@ g stands for "global", meaning to do this for the whole line. If you leave off t
 -i option is used to edit in place on filename.
 
 -e option indicates the expression/command to run.
+
+for example:
+
+
+replace something in a file
+```
+sed -i -e 's/hg19_ct_UserTrack_3545_//g' Human_coding_transcripts_mRNA.fa
+```
+Using sed/awk to remove anything after first space
+```
+sed -i -e 's/\s.*$//' cpat_merge_test.fa     
+```
+
