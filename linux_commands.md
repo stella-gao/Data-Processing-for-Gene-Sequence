@@ -1,4 +1,4 @@
-＃Using 'sed' to find and replace in Linux
+# Using 'sed' to find and replace in Linux
 sed is the stream editor, but can edit files directly too, with the following:
 
 sed -i -e 's/foo/bar/g' filename
