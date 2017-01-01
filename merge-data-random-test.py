@@ -22,7 +22,7 @@ def split_pos_neg_fa(fasta_file):
 	print count
 	
 	posSplit = int(count*0.6)
-	//negSplit = int(trainSplit + count*0.1)
+	#negSplit = int(trainSplit + count*0.1)
 
 	# load and code sequences
 	seq_vecs = OrderedDict()
