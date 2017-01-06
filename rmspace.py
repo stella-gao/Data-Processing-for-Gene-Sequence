@@ -30,7 +30,7 @@ def rmspace(fasta_file):
 
 	
 	f1.close()
-	f2.close()
+
 				
 				
 rmspace('Human_test.fa')
