@@ -10,13 +10,20 @@ g stands for "global", meaning to do this for the whole line. If you leave off t
 
 -e option indicates the expression/command to run.
 
+
 for example:
 
 
-replace something in a file
+remove "hg19_ct_UserTrack_3545_" in a file
 ```
 sed -i -e 's/hg19_ct_UserTrack_3545_//g' Human_coding_transcripts_mRNA.fa
 ```
+
+replace AAA with BBB in a file
+```
+sed -i -e 's/AAA/BBB/g' filename.txt
+```
+
 Using sed/awk to remove anything after first space
 ```
 sed -i -e 's/\s.*$//' cpat_merge_test.fa     
