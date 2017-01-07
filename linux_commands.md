@@ -24,6 +24,11 @@ replace AAA with BBB in a file
 sed -i -e 's/AAA/BBB/g' filename.txt
 ```
 
+replace "; transcript_version " with . in a file
+```
+sed -i -e 's/"; transcript_version "/./g' human.gtf
+```
+
 Using sed/awk to remove anything after first space
 ```
 sed -i -e 's/\s.*$//' cpat_merge_test.fa     
