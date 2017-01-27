@@ -37,3 +37,7 @@ Using grep to count the number of a string in a file
 ```
 grep -c '^+1' filename.txt
 ```
+Get line number of a string and all contents at that line
+```
+grep -nr 'NONCELT024045.1' celegans.out
+```
