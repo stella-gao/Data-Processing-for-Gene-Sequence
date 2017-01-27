@@ -33,4 +33,7 @@ Using sed/awk to remove anything after first space
 ```
 sed -i -e 's/\s.*$//' cpat_merge_test.fa     
 ```
-
+Using grep to count the number of a string in a file
+```
+grep -c '^+1' filename.txt
+```
