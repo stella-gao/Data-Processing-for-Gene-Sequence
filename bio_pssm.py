@@ -1,5 +1,6 @@
 from Bio import SeqIO
 
+instances=[]
 for seq_record in SeqIO.parse("nue1.txt", "fasta"):
     sq = seq_record.seq
     instances.append(sq)
@@ -9,6 +10,7 @@ m1 = motifs.create(instances)
 # len(m)
 score1 = m1.pssm
 
+instances=[]
 for seq_record in SeqIO.parse("nue2.txt", "fasta"):
     sq = seq_record.seq
     instances.append(sq)
