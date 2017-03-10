@@ -1,4 +1,5 @@
 from Bio import SeqIO
+from Bio import motifs
 
 scores = []
 
@@ -13,7 +14,9 @@ for i in range(20):
 
     m = motifs.create(instances)
     scores[i] = m.pssm
-    print scores[i]
+    #print scores[i]
+
+print max(scores)
     
 # print(m)
 # len(m)
