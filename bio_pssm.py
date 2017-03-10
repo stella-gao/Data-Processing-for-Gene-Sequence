@@ -1,15 +1,23 @@
 from Bio import SeqIO
 
+scores = []
+
+for j in range(20):
+    scores.append(0)
+
 instances=[]
-for seq_record in SeqIO.parse("nue1.txt", "fasta"):
-    sq = seq_record.seq
-    instances.append(sq)
+for i in range(20):
+    for seq_record in SeqIO.parse("nue" + str(i+1) + ".txt", "fasta"):
+        sq = seq_record.seq
+        instances.append(sq)
+
+    m = motifs.create(instances)
+    scores[i] = m.pssm
+    print scores[i]
     
-m1 = motifs.create(instances)
 # print(m)
 # len(m)
-score1 = m1.pssm
-
+'''
 instances=[]
 for seq_record in SeqIO.parse("nue2.txt", "fasta"):
     sq = seq_record.seq
@@ -17,3 +25,4 @@ for seq_record in SeqIO.parse("nue2.txt", "fasta"):
     
 m2 = motifs.create(instances)
 score2 = m2.pssm
+'''
