@@ -12,6 +12,8 @@ def pssm_score_cs(fasta_file):
 	
 	seq = ''
 	header = ''
+	sum1 = 0
+	sum2 = 0
 	
 	for line in open(fasta_file):
 		if line[0] == '>':			
